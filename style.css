@@ -61,3 +61,10 @@ header {
     border-radius: 100px;
     border: 1px solid #ffffff11;
 }
+
+.text-links a:hover {
+    color: var(--text-color);
+    text-decoration: underline;
+    text-decoration-thickness: 2px; 
+    text-underline-offset: 8px;     
+}
