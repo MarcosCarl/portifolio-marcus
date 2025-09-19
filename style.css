@@ -25,7 +25,7 @@ body {
 }
 
 h1 {
-    font-size: 42px;
+    font-size: 40px;
     color: var(--detalhe-color);
     text-transform: uppercase;
     font-weight: 500;
@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-    font-size: 42px;
+    font-size: 40px;
     color: var(--primary-color);
     text-transform: uppercase;
     font-weight: 500;
@@ -48,7 +48,7 @@ h3 {
 }
 
 h4 {
-    font-size: 42px;
+    font-size: 40px;
     color: var(--primary-color);
     text-transform: uppercase;
     font-weight: 500;
@@ -203,7 +203,6 @@ ul li {
 
 /* Estilos da seção de projetos */
 
-
 .cases {
     width: 100%;
     display: flex;
@@ -225,7 +224,9 @@ ul li {
 
 }
 
-.project {
+/* Borala - web seção */
+
+.borala {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -244,7 +245,7 @@ ul li {
 }
 
 @media (max-width: 960px) {
-  .project {
+  .borala {
     width: 100%;
     display: flex;
     flex-direction: column; /* empilha os elementos */
@@ -252,11 +253,26 @@ ul li {
     text-align: center;     /* opcional, para <p> e <ul> */
   }
   .cases h2{
+    font-size: 30px;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
+  .cases h4{
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+  .borala .about-project p{
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .about-project {
     max-width: 560px;
 }
@@ -327,14 +343,191 @@ ul li {
 
 /* Padrão: desktop */
 
-.borala-img img {
+.borala img {
   max-width: 100%;   
   height: auto;
 }
 
 /* Mobile: quando entra a imagem pequena */
 @media (max-width: 600px) {
-  .borala-img img {
+  .borala .project-image img {
+    width: 100%;
+    height: auto;      
+  }
+}
+
+/* Borala - app seção */
+.borala-app {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin-top: 50px;
+}
+
+@media (max-width: 960px) {
+  .borala-app {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* empilha os elementos */
+    align-items: center;    /* centraliza no eixo vertical */
+    text-align: center;     /* opcional, para <p> e <ul> */
+  }
+  .cases h2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.about-project {
+    max-width: 560px;
+}
+  .cases h4{
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+  .borala-app .about-project p{
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+}
+
+/* Padrão: desktop */
+
+.borala-app img {
+  max-width: 100%;   
+  height: auto;
+}
+
+/* Mobile: quando entra a imagem pequena */
+@media (max-width: 600px) {
+  .borala-app .project-image img {
+    width: 100%;
+    height: auto;      
+  }
+}
+
+
+/* estilo seção falshdog */
+.flashdog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin-top: 50px;
+}
+
+@media (max-width: 960px) {
+  .flashdog {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* empilha os elementos */
+    align-items: center;    /* centraliza no eixo vertical */
+    text-align: center;     /* opcional, para <p> e <ul> */
+  }
+
+.about-project {
+    max-width: 560px;
+}
+  .cases h4{
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+  .flashdog .about-project p{
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+}
+
+/* Padrão: desktop */
+
+.flashdog img {
+  max-width: 100%;   
+  height: auto;
+}
+
+/* Mobile: quando entra a imagem pequena */
+@media (max-width: 600px) {
+  .flashdog img img {
+    width: 100%;
+    height: auto;      
+  }
+}
+
+
+/* projeto essence */
+.essence {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin-top: 50px;
+}
+
+@media (max-width: 960px) {
+  .essence {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* empilha os elementos */
+    align-items: center;    /* centraliza no eixo vertical */
+    text-align: center;     /* opcional, para <p> e <ul> */
+  }
+
+.about-project {
+    max-width: 560px;
+}
+  .cases h4{
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+  .essence .about-project p{
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+}
+
+/* Padrão: desktop */
+
+.essence img {
+  max-width: 100%;   
+  height: auto;
+}
+
+/* Mobile: quando entra a imagem pequena */
+@media (max-width: 600px) {
+  .essence img img {
     width: 100%;
     height: auto;      
   }
