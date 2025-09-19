@@ -20,7 +20,7 @@ body {
     --backgraund-color: #1C1C1D;
     --primary-color: #FFFFFF;
     --text-secundary-color: #595857;
-    --secundary-color: #737272;
+    --secundary-color: #a1a1a1;
     --detalhe-color: #242938;
 }
 
@@ -31,6 +31,30 @@ h1 {
     font-weight: 500;
     line-height: 150%;
 }
+
+h2 {
+    font-size: 42px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secundary-color);
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 42px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 150%; 
+}
+
 
 p {
     font-size: 16px;
@@ -93,13 +117,14 @@ header {
     text-underline-offset: 8px;     
 }
 
-/* Aplicando estilos da main */
+/* Aplicando estilos e responsividade na main e*/
 
 
 main {
     width: 100%;
     height: 100vh;
     
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,7 +136,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 32px;
+    
+    padding: 30px;
     border-radius: 24px;
 
     max-width: 1120px;
@@ -125,21 +151,39 @@ main {
 }
 
 .skills ul {
+    width: 100%;
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 16px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skills img {
+    width: 20px;
 }
 
 .content {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+
+    justify-content: space-between ;
     align-items: end;
-    flex-wrap: wrap;
+
+    gap: 24px;
+}
+
+@media (max-width: 600px) {
+  .content {
+    display: flex;
+    flex-direction: column; /* empilha os elementos */
+    align-items: center;    /* centraliza no eixo vertical */
+    text-align: center;     /* opcional, para <p> e <ul> */
+  }
 }
 
 .content p {
+    width: 100%;
     display: flex;
     max-width: 422px;
     text-align: justify;
@@ -155,13 +199,143 @@ ul li {
     gap: 4px;
 }
 
-ul p {
-    color: var(--detalhe-color);
-    font-size: 16px;
-    text-transform: uppercase;
-    line-height: 120%;
+
+
+/* Estilos da seção de projetos */
+
+
+.cases {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 40px;
+
+    background-color: var(--backgraund-color);
+}
+
+.cases h2{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin-top: 50px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 960px) {
+  .project {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* empilha os elementos */
+    align-items: center;    /* centraliza no eixo vertical */
+    text-align: center;     /* opcional, para <p> e <ul> */
+  }
+  .cases h2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-project {
+    max-width: 560px;
+}
+
+}
+
+.about-project {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: start;
 }
 
 
+.about-project ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+
+    flex-wrap: wrap;
+}
+
+.about-project ul li{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    gap: 4px;
+}
+
+.about-project p {
+    text-align: justify;
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+
+    color: var(--secundary-color);
+}
 
 
+.about-project a {
+    color: var(--primary-color);
+    background-color: var(--backgraund-color);
+    border: 1.5px solid #ffffff25;
+    text-decoration: none;
+   
+    padding: 16px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+.about-project a:hover {
+    background-color: #ffffff15;
+    transition: ease;
+    border: 1.5px solid #ffffffad;
+}
+
+
+/* Padrão: desktop */
+
+.borala-img img {
+  max-width: 100%;   
+  height: auto;
+}
+
+/* Mobile: quando entra a imagem pequena */
+@media (max-width: 600px) {
+  .borala-img img {
+    width: 100%;
+    height: auto;      
+  }
+}
