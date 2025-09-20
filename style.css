@@ -243,8 +243,8 @@ main {
     border-radius: 0;
    
     gap: 50px; 
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: auto;
+    padding-bottom: auto;
 
   }
 
