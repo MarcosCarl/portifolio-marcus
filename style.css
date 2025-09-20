@@ -291,6 +291,8 @@ ul li {
     box-sizing: border-box;
     padding: 40px;
 
+    margin-top: 50px;
+    margin-bottom: 50px;
     background-color: var(--backgraund-color);
 }
 
