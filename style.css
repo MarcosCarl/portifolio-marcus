@@ -423,12 +423,6 @@ ul li {
 }
 
 
-/* Padrão: desktop */
-
-.borala img {
-  max-width: 100%;   
-  height: auto;
-}
 
 /* Mobile: quando entra a imagem pequena */
 @media (max-width: 600px) {
@@ -438,8 +432,8 @@ ul li {
   }
 }
 
-/* Borala - app seção */
-.borala-app {
+/* Alugue aqui seção */
+.alugue-aqui {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -454,7 +448,7 @@ ul li {
 }
 
 @media (max-width: 960px) {
-  .borala-app {
+  .alugue-aqui {
     width: 100%;
     display: flex;
     flex-direction: column; /* empilha os elementos */
@@ -477,7 +471,7 @@ ul li {
     align-items: center;
 }
 
-  .borala-app .about-project p{
+  .alugue-aqui .about-project p{
     font-size: 18px;
     width: 100%;
     display: flex;
@@ -487,14 +481,13 @@ ul li {
 
 /* Padrão: desktop */
 
-.borala-app img {
-  max-width: 100%;   
-  height: auto;
+.alugue-aqui img {
+  border-radius: 24px;
 }
 
 /* Mobile: quando entra a imagem pequena */
 @media (max-width: 600px) {
-  .borala-app .project-image img {
+  .alugue-aqui .project-image img {
     width: 100%;
     height: auto;      
   }
@@ -544,8 +537,7 @@ ul li {
 
 /* Padrão: desktop */
 
-.flashdog img {
-  max-width: 100%;   
+.flashdog img {  
   height: auto;
 }
 
@@ -554,6 +546,11 @@ ul li {
   .flashdog img img {
     width: 100%;
     height: auto;      
+  }
+
+  .project-image img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -602,8 +599,7 @@ ul li {
 
 /* Padrão: desktop */
 
-.essence img {
-  max-width: 100%;   
+.essence img {  
   height: auto;
 }
 
@@ -615,6 +611,130 @@ ul li {
   }
 }
 
+/* estilo seção esking */
+
+.esking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+    width: 100%;
+
+    max-width: 1120px;
+
+    margin-top: 50px;
+}
+
+.esking img {
+  border-radius: 24px;
+}
+
+@media (max-width: 960px) {
+  .esking {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* empilha os elementos */
+    align-items: center;    /* centraliza no eixo vertical */
+    text-align: center;     /* opcional, para <p> e <ul> */
+  }
+
+.about-project {
+    max-width: 560px;
+}
+  .cases h4{
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+  .esking .about-project p{
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+}
+
+/* Padrão: desktop */
+
+.esking img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+
+/* Mobile: quando entra a imagem pequena */
+@media (max-width: 600px) {
+  .esking img img {
+    width: 100%;
+    height: auto;      
+  }
+}
+
+
+/* estilo sa valente */
+
+.sa-valente {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+    width: 100%;
+
+    max-width: 1120px;
+
+    margin-top: 50px;
+}
+
+.sa-valente img {
+  border-radius: 24px;
+}
+
+@media (max-width: 960px) {
+  .sa-valente {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* empilha os elementos */
+    align-items: center;    /* centraliza no eixo vertical */
+    text-align: center;     /* opcional, para <p> e <ul> */
+  }
+
+.about-project {
+    max-width: 560px;
+}
+  .cases h4{
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+  .sa-valente .about-project p{
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+}
+
+/* Padrão: desktop */
+
+.sa-valente img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+
+/* Mobile: quando entra a imagem pequena */
+@media (max-width: 600px) {
+  .sa-valente img img {
+    width: 100%;
+    height: auto;      
+  }
+}
 
 /* Seção dobra CTA */
 
