@@ -242,9 +242,8 @@ main {
     text-align: center;
     border-radius: 0;
    
-    gap: 50px; 
-    padding-top: auto;
-    padding-bottom: auto;
+    gap: 40px; 
+    height: 80%;
 
   }
 
