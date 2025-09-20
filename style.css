@@ -189,7 +189,7 @@ main {
     justify-content: space-between;
     box-sizing: border-box;
  
-    padding: 40px;
+    padding: 16px;
     border-radius: 24px;
     
     width: 100%;
@@ -247,7 +247,7 @@ main {
     text-align: center;
     border-radius: 0;
    
-    padding: 0; 
+    padding: 0 16px; 
     height: 100%;
 
   }
