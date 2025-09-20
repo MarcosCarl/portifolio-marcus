@@ -305,6 +305,8 @@ ul li {
 
 }
 
+
+
 /* Borala - web seção */
 
 .borala {
@@ -434,6 +436,7 @@ ul li {
   }
 }
 
+
 /* Alugue aqui seção */
 .alugue-aqui {
     display: flex;
@@ -448,6 +451,8 @@ ul li {
 
     margin-top: 50px;
 }
+
+
 
 @media (max-width: 960px) {
   .alugue-aqui {
